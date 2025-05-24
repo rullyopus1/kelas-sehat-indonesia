@@ -5,6 +5,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Heart, Users, Shield, BookOpen, Activity, UserCheck } from 'lucide-react';
 import LoginModal from '@/components/LoginModal';
 import Dashboard from '@/components/Dashboard';
+import HealthTips from '@/components/HealthTips';
+import ReproductiveEducation from '@/components/ReproductiveEducation';
+import HealthInfoCarousel from '@/components/HealthInfoCarousel';
+import EmergencyContacts from '@/components/EmergencyContacts';
 
 const Index = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -144,6 +148,18 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Health Info Carousel */}
+      <HealthInfoCarousel />
+
+      {/* Health Tips Section */}
+      <HealthTips />
+
+      {/* Reproductive Education Section */}
+      <ReproductiveEducation />
+
+      {/* Emergency Contacts */}
+      <EmergencyContacts />
 
       {/* Features Section */}
       <section className="py-16 bg-white">
